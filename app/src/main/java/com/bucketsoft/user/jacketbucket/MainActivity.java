@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     // [START declare_auth]
     private FirebaseAuth mAuth;
-    // [END declare_auth]
+    // [END declare_auth] for new commit
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
