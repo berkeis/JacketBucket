@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "964444481576",
+    "firebase_url": "https://jacketbucket-962b5.firebaseio.com",
+    "project_id": "jacketbucket-962b5",
+    "storage_bucket": "jacketbucket-962b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964444481576:android:d0b3a170fb8a0d8b",
+        "android_client_info": {
+          "package_name": "com.bucketsoft.user.jacketbucket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964444481576-1tmh7311i7ta3l8hvfujrr912i6dvkqh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bucketsoft.user.jacketbucket",
+            "certificate_hash": "2e66316ad0c2cda837a946dc4f6c77f7b743be66"
+          }
+        },
+        {
+          "client_id": "964444481576-j542moml61bhne9em1q013el0oai158c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIDrCy7y_AVCsM7nm3VTTwxLMnwvbxGyc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "964444481576-j542moml61bhne9em1q013el0oai158c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
