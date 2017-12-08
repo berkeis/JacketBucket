@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "852726872407",
+    "firebase_url": "https://jacketinabucket-2b33a.firebaseio.com",
+    "project_id": "jacketinabucket-2b33a",
+    "storage_bucket": "jacketinabucket-2b33a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852726872407:android:d58275d5d910d0cb",
+        "android_client_info": {
+          "package_name": "com.bucketsoft.jacketbucket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852726872407-n3vjbj52371j58ggpoi1o2ih4nvpforc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSjfaxw2e5C_-7wLjdbBOf6N1YK3HDmV4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
