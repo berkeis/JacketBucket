@@ -4,4 +4,6 @@
     <string name="firebase_status_fmt">Firebase User: %s</string>
     <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
     <string name="auth_failed">auth_failed</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="send_button_label">Send</string>
 </resources>
