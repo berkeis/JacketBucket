@@ -11,14 +11,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-public class MessageAdapter extends ArrayAdapter<Jackets> {
-    public MessageAdapter(Context context, int resource, List<Jackets> objects) {
+public class MessageAdapter extends ArrayAdapter<Books> {
+    public MessageAdapter(Context context, int resource, List<Books> objects) {
         super(context, resource, objects);
     }
 
@@ -29,24 +30,28 @@ public class MessageAdapter extends ArrayAdapter<Jackets> {
         }
 
         ImageView photoImageView = (ImageView) convertView.findViewById(R.id.photoImageView);
-        TextView messageTextView = (TextView) convertView.findViewById(R.id.messageTextView);
-        TextView authorTextView = (TextView) convertView.findViewById(R.id.nameTextView);
+        TextView bookNameTextView = (TextView) convertView.findViewById(R.id.bookName);
+        TextView authorTextView = (TextView) convertView.findViewById(R.id.author);
+        TextView locations = (TextView) convertView.findViewById(R.id.locations);
 
-        Jackets message = getItem(position);
+        Books aBook = getItem(position);
 
-        boolean isPhoto = message.getPhotoUrl() != null;
-        if (isPhoto) {
-            messageTextView.setVisibility(View.GONE);
-            photoImageView.setVisibility(View.VISIBLE);
             Glide.with(photoImageView.getContext())
-                    .load(message.getPhotoUrl())
+                    .load(aBook.getPhotoUrl())
                     .into(photoImageView);
-        } else {
-            messageTextView.setVisibility(View.VISIBLE);
-            photoImageView.setVisibility(View.GONE);
-            messageTextView.setText(message.getText());
+
+        bookNameTextView.setText(aBook.getName());
+        authorTextView.setText(aBook.getAuthor());
+        locations.setText(aBook.getLocations());
+
+        //TODO: Multiline spinner yaptıktan sonra line 45 yerine kullan.
+        /*
+        StringBuilder builder = new StringBuilder();
+        for (String details : aBook.getLocations()) {
+            builder.append(details + "\n");
         }
-        authorTextView.setText(message.getName());
+        locations.setText(builder.toString());
+        */
 
         return convertView;
     }

@@ -14,19 +14,27 @@
         android:adjustViewBounds="true" />
 
     <TextView
-        android:id="@+id/messageTextView"
+        android:id="@+id/bookName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        tools:text="Message" />
+        tools:text="Name of the Book" />
 
     <TextView
-        android:id="@+id/nameTextView"
+        android:id="@+id/author"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        tools:text="Name" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:text="Author" />
+
+    <TextView
+        android:id="@+id/locations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        tools:text="Locations" />
 
 </LinearLayout>
